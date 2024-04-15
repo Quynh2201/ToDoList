@@ -1,0 +1,368 @@
+/* Container */
+body{
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    align-items: center;
+    background-color: #FDCA76;
+}
+
+.container2{
+    background-color: #FDCA76;
+    height: 100vh;
+    width: 70%;
+    float: right;
+}
+
+.container1{
+    height: 100vh;
+    width: 30%;
+    float:left;
+}
+
+.container1 img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.container2 h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #87594B;
+    font-family:Arial, Helvetica, sans-serif;
+}    
+/* Input */
+.todoinput{
+    display: grid;
+    border-bottom: 1px solid gray;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.todoinput-item{
+    display: grid;
+    margin-right: 25px;
+    width: 90%;
+}
+
+
+.todoinput-item label{
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #9B5C4C;
+    width: 100%;
+}
+
+.todoinput-item input{
+    padding: 8px;
+    border: none;
+    color: black;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.todoinput-item input:focus{
+    outline: 2px solid rgb(105, 28, 28);
+}
+
+
+/* Button Add */
+.btn-add{
+    align-items: center;
+    width: 30%;
+    font-weight: 600;
+}
+
+.PrimaryBtn{
+    background-color: beige;
+    color: brown;
+    border: none;
+    border-radius: 6px;
+    margin-top: 34px;
+    padding: 10px;
+    width:fit-content;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.PrimaryBtn span{
+    line-height: 1;
+}
+
+.PrimaryBtn:hover{
+    background-color:bisque;
+}
+
+
+/* Button Update */
+.btn-update{
+    display: flex;
+}
+
+.btn-update button{
+    margin-right: 15px;
+}
+
+
+/* To-do list */
+.task-item{
+    overflow-y: auto; 
+    max-height: 350px;
+}
+
+.form-list{
+    margin: 15px 20px 15px 20px;
+}
+
+.form-list > h3{
+    text-align: left;
+    margin-bottom: 5px;
+    color: rgb(81, 35, 35);
+    font-size: 20px;
+}
+
+.form-list .countDone{
+    color: #91220c;
+    font-size: 18px;
+}
+
+.form-list .countDone span{
+    color: #f7411d;
+    font-weight: bold;
+}
+
+.form-list .form{
+    border: 1px solid #9B5C4C;
+    border-radius: 6px;
+}
+
+.taskBg{
+    background-color: #de9c87;
+    border-radius: 6px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 140px 10px 15px;
+    text-align: left;
+    font-size: 22px;
+    position: relative;
+}
+
+.taskBg div{
+    display: flex;
+    align-items: center;
+}
+
+.form-list .form .list-output{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.TaskNumber{
+    color: rgb(92, 3, 3);
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 14px;
+    align-items: center;
+    justify-content: center;
+    width: 4%;
+}
+
+.taskBg .done .TaskText{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.taskBg .NumberText .TaskText {
+    display: inline-block; 
+    word-wrap: break-word;
+    width: 96%;
+    font-size: 20px;
+}
+
+
+
+.form-list .form .list-output .NumberText{
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 12px;
+}
+
+
+.form-list .form .list-output .percent .TaskText{
+    color: #552d25;
+    font-weight: 600px;
+    font-size: 18px;
+    margin-right: 15px;
+    word-wrap: break-word;
+}
+
+.form-list .form .list-output .percent{
+    width: 70%;
+}
+
+.form-list .form .list-output .percent .NavPercent{
+    background-color: rgb(221, 207, 190);
+    height: 6px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.form-list .form .list-output .percent .NavPercent .progess{
+    background-color: rgb(105, 28, 28);
+    height: 100%; 
+}
+
+:focus {
+    outline: none; 
+    box-shadow: 0 0 5px 2px #007bff; 
+}
+
+
+/* Icon */
+.iconsWrap{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    right: 15px;
+    width: auto;
+    display: inline-block;
+}
+
+.iconsWrap span{
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 10px 0px 10px;
+    color: #f7411d;
+}
+
+.iconsWrap .iconComplete, .iconsWrap .iconEdit{
+    color: rgb(9, 107, 9);
+}
+
+.iconsWrap .iconComplete:hover, .iconsWrap .iconEdit:hover{
+    color: rgb(2, 64, 2);
+}
+
+.iconsWrap .iconDelete{
+    color: #f7411d;
+}
+
+.iconsWrap .iconDelete:hover{
+    color: #7c1d0a;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1072px){
+    .container1{
+        display: none;
+    }
+    
+    .container2{
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+
+}
+
+
+@media screen and (max-width:760px) {
+    body{
+        overflow:visible;
+    }
+    .todoinput{
+        display: grid;
+        border-bottom: 1px solid gray;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        margin-left: 20px;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .todoinput-item{
+        display: grid;
+        margin-right: 25px;
+        width: 90%;
+    }
+    .todoinput-item input{
+        padding: 8px;
+        border: none;
+        color: black;
+        width: 90%;
+    }
+}
+
+@media screen and(max-width: 550px) {
+    body{
+        overflow:visible;
+        /* height: 200vh; */
+    }
+    /* .todoinput{
+        display: grid;
+        grid-template-rows: repeat(4, 50px); 
+        gap: 10px;
+    }
+    
+    .todoinput-item{
+        margin-right: 25px;
+        width: 90%;
+    }
+    .todoinput-item input{
+        padding: 8px;
+        border: none;
+        color: black;
+        width: 90%;
+    } */
+
+    .todoinput {
+        display: grid;
+        border-bottom: 1px solid gray;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        margin-left: 20px;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto auto; 
+        gap: 10px; 
+    }
+    
+    .todoinput-item, .btn-add {
+        display: grid;
+        margin-right: 25px;
+        width: 90%;
+        grid-row: span 1; 
+    }
+    
+    .todoinput-item label, .btn-add button {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #9B5C4C;
+        width: 100%;
+    }
+    
+    .todoinput-item input, .btn-add button {
+        padding: 8px;
+        border: none;
+        color: black;
+        width: 100%;
+        border-radius: 6px;
+    }
+    
+
+}
