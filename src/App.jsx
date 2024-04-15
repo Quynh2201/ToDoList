@@ -4,7 +4,6 @@ import AddTask from './main-components/AddTask';
 import Update from './main-components/Update';
 import ToDo from './main-components/ToDo';
 import img from './main-components/assets/to-do-list.jpeg';
-import SearchTask from './main-components/SearchTask';
 import { v4 as uuidv4 } from 'uuid';
 // import { localStorage } from 'localStorage';
 
