@@ -14,9 +14,7 @@ TodoList là một ứng dụng đơn giản giúp quản lý các công việc 
 1. Clone repository từ GitHub:
 2. Di chuyển đến thư mục dự án
 3. Cài đặt các phụ thuộc bằng npm hoặc yarn
-   npm install
-   # hoặc
-   yarn install
+   npm install hoặc yarn install
 4. Khởi động ứng dụng
 5. Mở trình duyệt web và truy cập vào địa chỉ
 
